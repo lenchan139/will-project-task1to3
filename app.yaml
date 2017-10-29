@@ -1,0 +1,38 @@
+application: will-project-task1to3
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /pytrade/.*
+  script: trade.app
+
+- url: /task1/.*
+  script: task1.app
+
+
+
+- url: /task2/.*
+  script: task2.app
+
+
+
+
+- url: /task3/.*
+  script: task3.app
+
+- url: /.*
+  script: main.app
+
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest

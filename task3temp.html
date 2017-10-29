@@ -1,0 +1,14 @@
+<br/><a href='/'>Back</a><br/>
+<b>Number Comparism</b>
+<br/>
+The Current number is:
+<b>{{ number }}</b>
+<br/>
+{% if msgCompare  %}
+You are input {{ userNum}} is {{ msgCompare }} with the random number.
+{% endif %}
+<form method='post'>
+  <input type='number' name='userNum' min='0' max='99' required/>
+  <input type='submit'/>
+</form>
+<form><input type='submit' value='re-random' /></form>
